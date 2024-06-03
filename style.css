@@ -278,8 +278,9 @@ p {
                 display: flex;
                 align-items: center;
                 gap: 10px;
-                
-
+                cursor: pointer;
+                border-radius: 12px;
+                transition: background-color 200ms ease;
                 img {
                     width: 87px;
                     height: 87px;
@@ -312,6 +313,10 @@ p {
                     /* 150% */
                     letter-spacing: 0.25px;
                 }
+            }
+            .card:hover{
+                background-color: #ECECEC;
+                transition: background-color 200ms ease;
             }
             
         }
