@@ -42,6 +42,7 @@
     &>.detail__main {
         display: flex;
         gap: 28px;
+        justify-content: space-between;
 
         &>.detail__left {
             display: flex;
