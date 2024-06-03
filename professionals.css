@@ -210,6 +210,8 @@ body > div.container > div > div.page__bar > div.bar__left > p.selected{
                 border-radius: 27px;
                 border: 1px solid #ECECEC;
                 background: #FFF;
+                transition: box-shadow 200ms ease;
+                cursor: pointer;
 
                 &>.card__top {
                     position: relative;
@@ -275,7 +277,7 @@ body > div.container > div > div.page__bar > div.bar__left > p.selected{
                         }
                     }
                 }
-
+                
                 &>.card__bottom {
                     display: flex;
                     flex-direction: column;
@@ -329,6 +331,12 @@ body > div.container > div > div.page__bar > div.bar__left > p.selected{
                         text-transform: capitalize;
                     }
                 }
+            }
+            &>.employee__card:hover{
+                -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+                -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+                box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+                transition: box-shadow 200ms ease;
             }
         }
     }
