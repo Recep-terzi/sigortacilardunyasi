@@ -1,3 +1,6 @@
+body > div.container > div > div.page__bar > div.bar__left > p.selected{
+    color: #F81539;
+}
 .professionals__main {
     margin-top: 62px;
 
@@ -30,9 +33,7 @@
             gap: 20px;
             margin-left: 16px;
 
-            &>p:first-child {
-                color: #F81539;
-            }
+            
         }
 
         &>.bar__right {
