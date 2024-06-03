@@ -412,25 +412,11 @@ p {
 
     .employee {
         ::-webkit-scrollbar {
-            width: 5px; /* Kaydırma çubuğu genişliği */
-            height: 5px; /* Alt kaydırma çubuğu yüksekliği */
+            width: 0px; /* Kaydırma çubuğu genişliği */
+            height: 0px; /* Alt kaydırma çubuğu yüksekliği */
         }
         
-        /* Scrollbar Track */
-        ::-webkit-scrollbar-track {
-            background: #f5f5f5; 
-        }
-        
-        /* Scrollbar Thumb */
-        ::-webkit-scrollbar-thumb {
-            background: #5e5d5d; /* Kaydırma çubuğu rengi */
-            border-radius: 10px; /* Kenarları yuvarlama */
-        }
-        
-        /* Scrollbar Thumb Hover (Üzerine gelindiğinde) */
-        ::-webkit-scrollbar-thumb:hover {
-            background: #555; /* Hover rengi */
-        }
+       
         
         .employee__title {
             display: flex;
@@ -621,9 +607,9 @@ p {
                 }
             }
             &>.employee__card:hover{
-                -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
-                -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
-                box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+                -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.10);
+                -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.10);
+                box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.10);
                 transition: box-shadow 200ms ease;
             }
         }
