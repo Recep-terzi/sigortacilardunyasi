@@ -119,6 +119,9 @@
     &>.register__right {
         padding: 171px 88px;
         display: flex;
+        width: 100%;
+        align-items: center;
+
         flex-direction: column;
 
         &>p:first-child {

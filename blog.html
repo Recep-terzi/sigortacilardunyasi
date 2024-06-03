@@ -19,7 +19,12 @@
             <div class="navbar__left">
                 <img src="./assets/logo.svg" alt="">
                 <p><a href="/index.html">Sigortacılar Dünyası</a></p>
-                <p><a href="/blog.html">Blog</a></p>
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                        <circle cx="4" cy="4" r="4" fill="#08D3BB" />
+                    </svg>
+                    <a href="/blog.html" style="color: #1090CB;">Blog</a>
+                </p>
                 <p>Hakkımızda</p>
                 <p><a href="/professionals.html">Profesyonellerimiz</a></p>
                 <p>Kurumlar</p>
@@ -36,9 +41,9 @@
             </p>
             <div class="page__bar">
                 <div class="bar__left">
-                    <p>Yeni</p>
-                    <p>Trend</p>
-                    <p>Popüler</p>
+                    <p onclick="changeColor(this)" class="selected">Yeni</p>
+                    <p onclick="changeColor(this)">Trend</p>
+                    <p onclick="changeColor(this)">Popüler</p>
                 </div>
                 <div class="bar__right">
                     <img src="./assets/barIcon.svg" alt="">
@@ -51,16 +56,17 @@
                         <p>Kategori : sigortacılar Dünyası</p>
                     </div>
                     <div class="title__right">
-                            <img src="./assets/moreIcon.svg" alt="">
-                            <input type="text" placeholder="Blog Yazılarında Ara...">
-                            <img src="./assets/searchIcon.svg" alt="">
+                        <img src="./assets/moreIcon.svg" alt="">
+                        <input type="text" placeholder="Blog Yazılarında Ara...">
+                        <img src="./assets/searchIcon.svg" alt="">
                     </div>
                 </div>
                 <div class="category__card">
                     <a href="/textDetail.html" class="card">
                         <img src="./assets/category.jpeg" alt="">
                         <p>Sigorta Sektörünün Devleri Zirvede Buluşuyor</p>
-                        <p>Can I learn the necessary computer science to <br /> build the software part of a self-driving car in one month?</p>
+                        <p>Can I learn the necessary computer science to <br /> build the software part of a
+                            self-driving car in one month?</p>
                         <div class="card__info">
                             <div class="info__left">
                                 <div class="left__image">
@@ -77,7 +83,8 @@
                     <a href="/textDetail.html" class="card">
                         <img src="./assets/category2.png" alt="">
                         <p>Sigorta Sektörünün Devleri Zirvede Buluşuyor</p>
-                        <p>Can I learn the necessary computer science to <br /> build the software part of a self-driving car in one month?</p>
+                        <p>Can I learn the necessary computer science to <br /> build the software part of a
+                            self-driving car in one month?</p>
                         <div class="card__info">
                             <div class="info__left">
                                 <div class="left__image">
@@ -94,7 +101,8 @@
                     <a href="/textDetail.html" class="card">
                         <img src="./assets/category3.jpeg" alt="">
                         <p>Sigorta Sektörünün Devleri Zirvede Buluşuyor</p>
-                        <p>Can I learn the necessary computer science to <br /> build the software part of a self-driving car in one month?</p>
+                        <p>Can I learn the necessary computer science to <br /> build the software part of a
+                            self-driving car in one month?</p>
                         <div class="card__info">
                             <div class="info__left">
                                 <div class="left__image">
@@ -111,7 +119,8 @@
                     <a href="/textDetail.html" class="card">
                         <img src="./assets/category4.jpeg" alt="">
                         <p>Sigorta Sektörünün Devleri Zirvede Buluşuyor</p>
-                        <p>Can I learn the necessary computer science to <br /> build the software part of a self-driving car in one month?</p>
+                        <p>Can I learn the necessary computer science to <br /> build the software part of a
+                            self-driving car in one month?</p>
                         <div class="card__info">
                             <div class="info__left">
                                 <div class="left__image">
@@ -128,7 +137,8 @@
                     <a href="/textDetail.html" class="card">
                         <img src="./assets/category.jpeg" alt="">
                         <p>Sigorta Sektörünün Devleri Zirvede Buluşuyor</p>
-                        <p>Can I learn the necessary computer science to <br /> build the software part of a self-driving car in one month?</p>
+                        <p>Can I learn the necessary computer science to <br /> build the software part of a
+                            self-driving car in one month?</p>
                         <div class="card__info">
                             <div class="info__left">
                                 <div class="left__image">
@@ -145,7 +155,8 @@
                     <a href="/textDetail.html" class="card">
                         <img src="./assets/category2.png" alt="">
                         <p>Sigorta Sektörünün Devleri Zirvede Buluşuyor</p>
-                        <p>Can I learn the necessary computer science to <br /> build the software part of a self-driving car in one month?</p>
+                        <p>Can I learn the necessary computer science to <br /> build the software part of a
+                            self-driving car in one month?</p>
                         <div class="card__info">
                             <div class="info__left">
                                 <div class="left__image">
@@ -162,7 +173,8 @@
                     <a href="/textDetail.html" class="card">
                         <img src="./assets/category3.jpeg" alt="">
                         <p>Sigorta Sektörünün Devleri Zirvede Buluşuyor</p>
-                        <p>Can I learn the necessary computer science to <br /> build the software part of a self-driving car in one month?</p>
+                        <p>Can I learn the necessary computer science to <br /> build the software part of a
+                            self-driving car in one month?</p>
                         <div class="card__info">
                             <div class="info__left">
                                 <div class="left__image">
@@ -179,7 +191,8 @@
                     <a href="/textDetail.html" class="card">
                         <img src="./assets/category4.jpeg" alt="">
                         <p>Sigorta Sektörünün Devleri Zirvede Buluşuyor</p>
-                        <p>Can I learn the necessary computer science to <br /> build the software part of a self-driving car in one month?</p>
+                        <p>Can I learn the necessary computer science to <br /> build the software part of a
+                            self-driving car in one month?</p>
                         <div class="card__info">
                             <div class="info__left">
                                 <div class="left__image">
@@ -196,7 +209,8 @@
                     <a href="/textDetail.html" class="card">
                         <img src="./assets/category.jpeg" alt="">
                         <p>Sigorta Sektörünün Devleri Zirvede Buluşuyor</p>
-                        <p>Can I learn the necessary computer science to <br /> build the software part of a self-driving car in one month?</p>
+                        <p>Can I learn the necessary computer science to <br /> build the software part of a
+                            self-driving car in one month?</p>
                         <div class="card__info">
                             <div class="info__left">
                                 <div class="left__image">
@@ -213,7 +227,8 @@
                     <a href="/textDetail.html" class="card">
                         <img src="./assets/category2.png" alt="">
                         <p>Sigorta Sektörünün Devleri Zirvede Buluşuyor</p>
-                        <p>Can I learn the necessary computer science to <br /> build the software part of a self-driving car in one month?</p>
+                        <p>Can I learn the necessary computer science to <br /> build the software part of a
+                            self-driving car in one month?</p>
                         <div class="card__info">
                             <div class="info__left">
                                 <div class="left__image">
@@ -230,7 +245,8 @@
                     <a href="/textDetail.html" class="card">
                         <img src="./assets/category3.jpeg" alt="">
                         <p>Sigorta Sektörünün Devleri Zirvede Buluşuyor</p>
-                        <p>Can I learn the necessary computer science to <br /> build the software part of a self-driving car in one month?</p>
+                        <p>Can I learn the necessary computer science to <br /> build the software part of a
+                            self-driving car in one month?</p>
                         <div class="card__info">
                             <div class="info__left">
                                 <div class="left__image">
@@ -247,7 +263,8 @@
                     <a href="/textDetail.html" class="card">
                         <img src="./assets/category4.jpeg" alt="">
                         <p>Sigorta Sektörünün Devleri Zirvede Buluşuyor</p>
-                        <p>Can I learn the necessary computer science to <br /> build the software part of a self-driving car in one month?</p>
+                        <p>Can I learn the necessary computer science to <br /> build the software part of a
+                            self-driving car in one month?</p>
                         <div class="card__info">
                             <div class="info__left">
                                 <div class="left__image">
@@ -262,7 +279,7 @@
                         </div>
                     </a>
                 </div>
-                
+
             </div>
         </div>
     </div>
@@ -275,7 +292,10 @@
                         <p>Sigortacılar Dünyası</p>
                     </div>
                     <div class="left__info">
-                        Sigorta sektörü, her geçen gün daha da dijitalleşen ve karmaşıklaşan bir dünyada, etkili iletişim ve işbirliği gerektiren dinamik bir yapıya sahiptir. Bu bağlamda, Sigortacılar Dünyası, tüm sigorta acenteliklerini tek bir çatı altında toplayarak sektördeki bilgi paylaşımını, işbirliğini ve yenilikçiliği teşvik eden benzersiz bir platform sunmaktadır.
+                        Sigorta sektörü, her geçen gün daha da dijitalleşen ve karmaşıklaşan bir dünyada, etkili
+                        iletişim ve işbirliği gerektiren dinamik bir yapıya sahiptir. Bu bağlamda, Sigortacılar Dünyası,
+                        tüm sigorta acenteliklerini tek bir çatı altında toplayarak sektördeki bilgi paylaşımını,
+                        işbirliğini ve yenilikçiliği teşvik eden benzersiz bir platform sunmaktadır.
                     </div>
                     <div class="left__input__title">
                         <span></span>
@@ -342,13 +362,14 @@
                         <p>It was a great match today Janzi! You did great😉🇩🇪</p>
                     </div>
                 </div>
-                
+
             </div>
             <div class="right__info">
                 Web Sitesi <span style="font-weight: 700;">Krc Medya Grup</span>
             </div>
         </div>
     </div>
+    <script src="./script.js"></script>
 </body>
 
 </html>

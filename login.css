@@ -120,7 +120,8 @@
         padding: 171px 88px;
         display: flex;
         flex-direction: column;
-
+        width: 100%;
+        align-items: center;
         &>p:first-child {
             color: #0C1421;
             font-size: 36px;

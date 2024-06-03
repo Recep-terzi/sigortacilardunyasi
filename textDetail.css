@@ -27,7 +27,6 @@
 .textDetail__main {
     display: flex;
     flex-direction: column;
-
     &>.page__info {
         margin: 73px 0 45px 0;
         color: #3E3232;
@@ -130,7 +129,6 @@
         &>.detail__right {
             display: flex;
             flex-direction: column;
-
             &>.right__tag {
                 display: flex;
                 justify-content: space-between;
