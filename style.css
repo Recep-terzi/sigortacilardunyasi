@@ -472,8 +472,7 @@ p {
         .employee__body {
            
             display: grid;
-            grid-template-columns: auto auto auto auto auto;
-            overflow-x: scroll;
+            grid-template-columns: auto auto auto auto;
             justify-content: space-between;
             gap: 47px;
             
@@ -481,7 +480,7 @@ p {
             
             &>.employee__card {
                 transition: box-shadow 200ms ease;
-                width: 285px;
+                width: 320px;
                 height: 382px;
                 border-radius: 27px;
                 border: 1px solid #ECECEC;
