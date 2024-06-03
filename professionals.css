@@ -199,13 +199,13 @@ body > div.container > div > div.page__bar > div.bar__left > p.selected{
 
         .employee__body {
             display: grid;
-            grid-template-columns: auto auto auto auto auto;
+            grid-template-columns: auto auto auto auto;
             justify-content: space-between;
             gap: 19px;
             margin-top: 28px;
 
             &>.employee__card {
-                width: 250px;
+                width: 330px;
                 height: 382px;
                 border-radius: 27px;
                 border: 1px solid #ECECEC;
