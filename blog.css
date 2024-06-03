@@ -132,10 +132,11 @@ body > div.container > div > div.page__bar > div.bar__left > p.selected{
             &>.card {
                 display: flex;
                 flex-direction: column;
-                width: 315px;
+                width: 335px;
                 height: 389px;
                 padding: 10px;
                 border-radius: 12px;
+                transition: box-shadow 200ms ease;
                 gap: 16px;
                 background: #FFF;
                 box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.07);
@@ -149,7 +150,7 @@ body > div.container > div > div.page__bar > div.bar__left > p.selected{
                 }
 
                 &>p:nth-child(2) {
-                    width: 273px;
+                    width: 310px;
                     overflow: hidden;
                     color: var(--color-2);
                     text-overflow: ellipsis;
@@ -163,7 +164,7 @@ body > div.container > div > div.page__bar > div.bar__left > p.selected{
                 }
 
                 &>p:nth-child(3) {
-                    width: 273px;
+                    width: 310px;
                     height: 40px;
                     overflow: hidden;
                     color: rgba(62, 50, 50, 0.75);
@@ -230,6 +231,12 @@ body > div.container > div > div.page__bar > div.bar__left > p.selected{
                         height: 19px;
                     }
                 }
+            }
+            &>.card:hover{
+                -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.10);
+                -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.10);
+                box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.10);
+                transition: box-shadow 200ms ease;
             }
         }
 
