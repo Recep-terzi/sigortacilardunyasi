@@ -199,13 +199,13 @@ body > div.container > div > div.page__bar > div.bar__left > p.selected{
 
         .employee__body {
             display: grid;
-            grid-template-columns: auto auto auto auto;
+            grid-template-columns: auto auto auto auto auto;
             justify-content: space-between;
             gap: 19px;
             margin-top: 28px;
 
             &>.employee__card {
-                width: 285px;
+                width: 250px;
                 height: 382px;
                 border-radius: 27px;
                 border: 1px solid #ECECEC;
@@ -333,9 +333,9 @@ body > div.container > div > div.page__bar > div.bar__left > p.selected{
                 }
             }
             &>.employee__card:hover{
-                -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
-                -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
-                box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+                -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.10);
+                -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.10);
+                box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.10);
                 transition: box-shadow 200ms ease;
             }
         }
