@@ -27,7 +27,7 @@ p {
 /* Main CSS */
 
 .container {
-    width: 1800px;
+    width: 1440px;
     max-width: 96%;
     margin: auto;
 }
@@ -190,11 +190,14 @@ p {
         &>.slider__body__left {
             position: relative;
             height: 640px;
-            width: 1078px;
-
+            &>img{
+                width: 875px;
+                height: 496px;
+            }
             &>p {
                 position: absolute;
-                bottom: 21px;
+                width: 836px;
+                bottom: 160px;
                 left: 21px;
                 padding: 16px;
                 background-color: rgba(255, 255, 255, 0.75);
@@ -205,7 +208,7 @@ p {
                 gap: 16px;
 
                 &>span:first-child {
-                    width: 914px;
+                    width: 100%;
                     overflow: hidden;
                     color: #000;
                     font-feature-settings: 'clig' off, 'liga' off;
@@ -218,8 +221,7 @@ p {
                 }
 
                 &>span:last-child {
-                    width: 1035px;
-                    height: 40px;
+                    width: 100%;
                     overflow: hidden;
                     color: var(--Dark-75, rgba(0, 0, 0, 0.75));
                     text-overflow: ellipsis;
@@ -238,7 +240,7 @@ p {
             display: flex;
             flex-direction: column;
             width: 360px;
-            height: 636px;
+            height: 568px;
             overflow: hidden;
             border-radius: 12px;
             gap: 20px;
@@ -258,7 +260,7 @@ p {
                 }
 
                 p:first-child {
-                    width: 223px;
+                    width: 210px;
                     height: 40px;
                     flex-shrink: 0;
                     overflow: hidden;
@@ -289,6 +291,7 @@ p {
     .slider .slider__number {
         display: flex;
         margin-top: 36px;
+        top: 0;
         gap: 5px;
 
         &>p {
@@ -324,10 +327,11 @@ p {
     .info__card {
         display: flex;
         flex-direction: column;
+        border-radius: 17px;
         margin-top: 57px;
         height: 444px;
         background-color: #f5f5f5;
-        padding: 65px;
+        padding: 64px 66px;
 
         &>img:first-child {
             margin-bottom: 20px;
@@ -337,22 +341,22 @@ p {
 
         &>p:nth-child(2) {
             color: #484848;
-            font-size: 16px;
+            font-size: 15px;
             font-style: normal;
             font-weight: 700;
             font-family: "Proxima Nova";
             line-height: normal;
-            margin-bottom: 25px;
+            margin-bottom: 30px;
         }
 
         &>p:nth-child(3) {
             color: #484848;
-            font-size: 40px;
+            font-size: 35px;
             font-style: normal;
             font-family: "Proxima Nova";
             font-weight: 500;
             line-height: normal;
-            margin-bottom: 11px;
+            margin-bottom: 17px;
 
             &>span {
                 font-weight: 700;
@@ -366,13 +370,13 @@ p {
             font-family: "Proxima Nova";
             font-weight: 500;
             line-height: 140%;
-            margin-bottom: 20px;
+            margin-bottom: 62px;
         }
 
         &>img:last-child {
             width: 80px;
-            height: 7;
-            margin-top: 25px;
+            height: 7px;
+            margin-bottom: 62px;
         }
     }
 
@@ -430,9 +434,9 @@ p {
 
         .employee__body {
             display: grid;
-            grid-template-columns: auto auto auto auto auto;
+            grid-template-columns: auto auto auto auto ;
             justify-content: space-between;
-            gap: 19px;
+            gap: 47px;
             margin-top: 28px;
 
             &>.employee__card {
@@ -620,7 +624,7 @@ p {
         &>.blog__body {
             display: grid;
             grid-template-columns: auto auto;
-            gap: 24px;
+            gap: 12px;
             margin-top: 30px;
 
             &>.blog__card {
@@ -643,11 +647,12 @@ p {
 
                 &>.card__right {
                     display: flex;
+                    width: 100%;
                     flex-direction: column;
 
                     &>p:first-child {
                         color: var(--color-2);
-                        width: 362px;
+                        width: 309px;
                         overflow: hidden;
                         text-overflow: ellipsis;
                         white-space: nowrap;
@@ -661,7 +666,7 @@ p {
 
                     &>p:nth-child(2) {
                         color: rgba(62, 50, 50, 0.75);
-                        width: 362px;
+                        width: 309px;
                         overflow: hidden;
                         text-overflow: ellipsis;
                         white-space: nowrap;
@@ -728,11 +733,11 @@ p {
     display: flex;
     margin-top: 54px;
     margin-bottom: 26px;
-    justify-content: space-between;
+    gap: 90px;
     &>.footer__left {
         display: flex;
         flex-direction: column;
-        width: 948px;
+        width: 1200px;
         height: 483px;
         flex-shrink: 0;
         padding: 40px 40px 40px 214px;
@@ -938,7 +943,7 @@ p {
 
         &>.footer__info {
             display: flex;
-            width: 908px;
+            width: 97%;
             height: 48px;
             padding: 8px 12px 8px 205px;
             align-items: center;
@@ -970,7 +975,7 @@ p {
             display: flex;
             gap: 24px;
             padding: 40px 24px;
-
+            
             &>.new__agency {
                 display: flex;
                 flex-direction: column;
