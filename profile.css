@@ -86,6 +86,19 @@
             &>.menu__center {
                 display: flex;
                 gap: 34px;
+                &>p:nth-child(2){
+                    display: flex;
+                    position: relative;
+                    &>span {
+                        width: 10px;
+                        position: absolute;
+                        height: 4px;
+                        border-radius: 12px;
+                        background: var(--Primary, #F81539);
+                        bottom: -5px;
+                    }
+                }
+              
             }
 
             &>.menu__right {
