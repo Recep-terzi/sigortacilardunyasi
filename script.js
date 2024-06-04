@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Metni al
     const nameElement = document.querySelector('.card__left p');
     const nameText = nameElement.textContent.trim();
-    
+    console.log(nameElement)
     // Boşlukları "+" ile değiştir
     const formattedName = nameText.replace(/\s+/g, '+');
     
@@ -108,5 +108,21 @@ document.addEventListener('DOMContentLoaded', function () {
     
     // API URL'sini img'nin src niteliğine ata
     const imgElement = document.getElementById('avatar');
+    imgElement.src = apiUrl;
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Metni al
+    const nameElement = document.querySelector('.card__left .company__info');
+    const nameText = nameElement.textContent.trim();
+    console.log(nameElement)
+    // Boşlukları "+" ile değiştir
+    const formattedName = nameText.replace(/\s+/g, '+');
+    
+    // API URL'sini oluştur
+    const apiUrl = `https://ui-avatars.com/api/?name=${formattedName}`;
+    
+    // API URL'sini img'nin src niteliğine ata
+    const imgElement = document.getElementById('avatar2');
     imgElement.src = apiUrl;
 });

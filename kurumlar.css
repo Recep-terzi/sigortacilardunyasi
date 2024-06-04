@@ -212,7 +212,9 @@ body>div.container>div>div.page__bar>div.bar__left>p.selected {
                     }
                 }
             }
-
+            &>.card:hover{
+                box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.10);
+            }
             &>.card:first-child {
                 border-radius: 12px 12px 0px 0px;
                 border: 1px solid #DBDADE;
