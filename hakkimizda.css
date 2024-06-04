@@ -45,6 +45,26 @@
                 width: 641px;
                 height: 406px;
                 flex-shrink: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                &>p:last-child {
+                    display: flex;
+                    align-items: center;
+                    color: #1A4982;
+                    gap: 8px;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 20px;
+                    /* 142.857% */
+                    text-transform: capitalize;
+                    width: max-content;
+                    border-radius: 12px;
+                    border: 1px solid #E6E6E6;
+                    padding: 10px 15px;
+                }
             }
 
             &>.body__right {
@@ -243,7 +263,7 @@
                     width: 212px;
                 }
             }
-            
+
         }
     }
 }
