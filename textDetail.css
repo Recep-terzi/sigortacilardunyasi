@@ -112,6 +112,7 @@
                 line-height: normal;
                 text-transform: capitalize;
                 margin-bottom: 15px;
+                
             }
 
             &>p:nth-child(4),
@@ -119,11 +120,14 @@
                 color: #3E3232;
                 font-size: 18px;
                 font-style: normal;
+                text-align: justify;
                 font-weight: 400;
                 line-height: 34px;
-                text-transform: lowercase;
                 margin-bottom: 15px;
-                width: 1068px;
+                width: 1030px;
+                &>span{
+                    text-decoration: underline;
+                }
             }
         }
 
