@@ -27,6 +27,7 @@
 .textDetail__main {
     display: flex;
     flex-direction: column;
+    width: 100%;
     &>.page__info {
         margin: 73px 0 45px 0;
         color: #3E3232;
@@ -146,6 +147,7 @@
                     font-weight: 500;
                     line-height: 20px;
                     border-radius: 12px;
+                    white-space: nowrap;
                     gap: 8px;
                     background: #F5F5F5;
                     padding: 10px 24px 10px 16px;
@@ -428,7 +430,7 @@
         &>.card {
             display: flex;
             flex-direction: column;
-            width: 315px;
+            width: 335px;
             height: 389px;
             padding: 10px;
             border-radius: 12px;

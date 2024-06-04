@@ -30,14 +30,20 @@ p {
     width: 1440px;
     max-width: 96%;
     margin: auto;
+    display: flex;
+    justify-content: space-between;
 }
 
 .navbar {
     display: flex;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    z-index: 99999;
     justify-content: space-between;
     padding: 20px 0;
 
-    &>.navbar__left {
+    &>.container>.navbar__left {
         display: flex;
         align-items: center;
 
@@ -65,7 +71,7 @@ p {
 
     ;
 
-    &>.navbar__right {
+    &>.container>.navbar__right {
         display: flex;
         align-items: center;
         gap: 20px;
@@ -146,7 +152,7 @@ p {
 .main__section {
     display: flex;
     flex-direction: column;
-
+    padding-top: 100px;
     .slider .slider__title {
         display: flex;
         align-items: center;

@@ -1,7 +1,7 @@
 .detail__main {
-    margin-top: 63px;
     margin-bottom: 255px;
-
+    width: 100%;
+    padding-top: 130px;
     &>.page__info {
         color: var(--color-2);
         font-size: 12px;
