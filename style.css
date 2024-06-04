@@ -503,20 +503,32 @@ p {
                     position: relative;
                     display: flex;
                     flex-direction: column;
-
-                    &>img {
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        width: 155px;
-                        height: 154px;
-                        margin: auto;
-                        margin-top: 14px;
+                    &>.card__image{
+                        position: relative;
+                        &>img:first-child {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 155px;
+                            height: 154px;
+                            margin: auto;
+                            margin-top: 14px;
+                        }
+                        &>img:last-child{
+                            position: absolute;
+                            top: 15px;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                            margin: auto;
+                        }
                     }
+                    
 
                     &>p:first-child {
                         position: absolute;
                         width: 89px;
+                        z-index: 99999;
                         height: 22px;
                         right: 0;
                         border-radius: 0px 15.5px 0px 4px;
