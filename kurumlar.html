@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>Sigortacılar Dünyası</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./kurumlar.css">
+    <link rel="icon" href="./assets/logo.svg">
+</head>
+
+<body>
+    <navbar class="navbar">
+        <div class="container">
+            <div class="navbar__left">
+                <img src="./assets/logo.svg" alt="">
+                <p><a href="/index.html">Sigortacılar Dünyası</a></p>
+                <p><a href="/blog.html">Blog</a></p>
+                <p>Hakkımızda</p>
+                <p>
+                    <a href="/professionals.html">Profesyonellerimiz</a>
+                </p>
+                <p><svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                        <circle cx="4" cy="4" r="4" fill="#08D3BB" />
+                    </svg><a href="/kurumlar.html" style="color: #1090CB;">Kurumlar</a></p>
+                <p>Dernekler</p>
+            </div>
+            <div class="navbar__right">
+                <a href="./register.html">Üye Ol</a>
+                <a href="./login.html">Giriş Yap <img src="./assets/rightIcon.svg" alt=""></a>
+            </div>
+        </div>
+    </navbar>
+    <div class="container">
+        <div class="kurumlar__main">
+            <p class="page__info">
+                Ana Sayfa > Kurumlar
+            </p>
+            <div class="page__bar">
+                <div class="bar__left">
+                    <p onclick="changeColor(this)" class="selected">Tümü</p>
+                    <p onclick="changeColor(this)">Popüler</p>
+                </div>
+                <div class="bar__right">
+                    <img src="./assets/barIcon.svg" alt="">
+                </div>
+            </div>
+            <div class="kurumlar">
+                <div class="kurumlar__title">
+                    <div class="title__left">
+                        <span></span>
+                        <p>Sigorta Kurumları Hızlı İletişim</p>
+                    </div>
+                    <div class="title__right">
+                        <img src="./assets/moreIcon.svg" alt="">
+                        <input type="text" placeholder="Kurumlarda Ara...">
+                        <img src="./assets/searchIcon.svg" alt="">
+                    </div>
+
+                </div>
+                <div class="kurumlar__cards">
+                    <div class="card">
+                        <div class="card__left">
+                            <p style="background-color: #237EFF;">AS</p>
+                            <p>Aksigorta</p>
+                        </div>
+                        <div class="card__center">
+                           <div class="center__left">
+                            <span></span>
+                            <p>Müşteri Hizmetleri</p>
+                           </div>
+                            <div class="center__right">
+                                <img src="./assets/phoneCall.svg" alt="">
+                            <p>444 27 27</p>
+                            </div>
+                        </div>
+                        <div class="card__right">
+                            <img src="./assets/web.svg" alt="">
+                            <p>Web Sitesi</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__left">
+                            <p style="background-color: #FF6200;">AS</p>
+                            <p>Allianz Sigorta</p>
+                        </div>
+                        <div class="card__center">
+                            <div class="center__left">
+                                <span></span>
+                            <p>Müşteri Hizmetleri</p>
+                            </div>
+                           <div class="center__right">
+                            <img src="./assets/phoneCall.svg" alt="">
+                            <p>0850 399 99 99</p>
+                           </div>
+                        </div>
+                        <div class="card__right">
+                            <img src="./assets/web.svg" alt="">
+                            <p>Web Sitesi</p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
