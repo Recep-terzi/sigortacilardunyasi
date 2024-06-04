@@ -1,7 +1,7 @@
 
 function changeColor(element) {
     var items = document.querySelectorAll('.bar__left p');
-    items.forEach(function(item) {
+    items.forEach(function (item) {
         if (item === element) {
             item.classList.add('selected');
         } else {
@@ -10,7 +10,7 @@ function changeColor(element) {
     });
 }
 
-document.addEventListener('scroll', function() {
+document.addEventListener('scroll', function () {
     const navbar = document.querySelector('.navbar');
     if (window.scrollY > 0) {
         navbar.classList.add('scrolled');
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('click', (event) => {
         if (!selectBox.contains(event.target)) {
             selectBox.classList.remove('active');
-        }   
+        }
     });
 });
 document.addEventListener('DOMContentLoaded', () => {
@@ -94,3 +94,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Metni al
+    const nameElement = document.querySelector('.card__left p');
+    const nameText = nameElement.textContent.trim();
+    
+    // Boşlukları "+" ile değiştir
+    const formattedName = nameText.replace(/\s+/g, '+');
+    
+    // API URL'sini oluştur
+    const apiUrl = `https://ui-avatars.com/api/?name=${formattedName}`;
+    
+    // API URL'sini img'nin src niteliğine ata
+    const imgElement = document.getElementById('avatar');
+    imgElement.src = apiUrl;
+});
