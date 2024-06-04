@@ -18,3 +18,79 @@ document.addEventListener('scroll', function() {
         navbar.classList.remove('scrolled');
     }
 });
+document.addEventListener('DOMContentLoaded', () => {
+    const selectBox = document.querySelector('.select-box');
+    const selectedOption = document.querySelector('.selected-option');
+    const options = document.querySelectorAll('.option');
+    const searchInput = document.querySelector('.search-input');
+
+    selectBox.addEventListener('click', (event) => {
+        if (event.target !== searchInput) {
+            selectBox.classList.toggle('active');
+        }
+    });
+
+    options.forEach(option => {
+        option.addEventListener('click', () => {
+            selectedOption.textContent = option.textContent;
+            selectBox.classList.remove('active');
+        });
+    });
+
+    document.addEventListener('click', (event) => {
+        if (!selectBox.contains(event.target)) {
+            selectBox.classList.remove('active');
+        }   
+    });
+});
+document.addEventListener('DOMContentLoaded', () => {
+    const selectBox = document.querySelector('.select-box2');
+    const selectedOption = document.querySelector('.selected-option2');
+    const options = document.querySelectorAll('.option2');
+    const searchInput = document.querySelector('.search-input2');
+
+    selectBox.addEventListener('click', (event) => {
+        if (event.target !== searchInput) {
+            selectBox.classList.toggle('active');
+        }
+    });
+
+    options.forEach(option => {
+        option.addEventListener('click', () => {
+            selectedOption.textContent = option.textContent;
+            selectBox.classList.remove('active');
+        });
+    });
+
+    document.addEventListener('click', (event) => {
+        if (!selectBox.contains(event.target)) {
+            selectBox.classList.remove('active');
+        }
+    });
+});
+document.addEventListener('DOMContentLoaded', () => {
+    const selectBox = document.querySelector('.select-box3');
+    const selectedOption = document.querySelector('.selected-option3');
+    const options = document.querySelectorAll('.option3');
+    const searchInput = document.querySelector('.search-input3');
+
+    selectBox.addEventListener('click', (event) => {
+        if (event.target !== searchInput) {
+            selectBox.classList.toggle('active');
+        }
+    });
+
+    options.forEach(option => {
+        option.addEventListener('click', () => {
+            selectedOption.textContent = option.textContent;
+            selectBox.classList.remove('active');
+        });
+    });
+
+    document.addEventListener('click', (event) => {
+        if (!selectBox.contains(event.target)) {
+            selectBox.classList.remove('active');
+        }
+    });
+});
+

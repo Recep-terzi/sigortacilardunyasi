@@ -1,6 +1,79 @@
 body > div.container > div > div.page__bar > div.bar__left > p.selected{
     color: #F81539;
 }
+.custom-select-container {
+    position: relative;
+    width: 130px;
+}
+.custom-select-container2{
+    position: relative;
+    width: 165px;
+}
+.custom-select-container img,.custom-select-container2 img{
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    bottom: 0;
+    margin: auto;
+    width: 16px;
+}
+.select-box,.select-box2,.select-box3{
+    border-radius: 5px 5px 0 0;
+    padding: 10px;
+    background-color: #F5F5F5;
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+    color: rgba(62, 50, 50, 0.75);
+}
+
+.selected-option,.selected-option2,.selected-option3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.custom-select-container2 .dropdown{
+    width: 165px;
+}
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 130px;
+    left: -1px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+}
+
+.search-input,.search-input2,.search-input3 {
+    padding: 8px;
+    border-radius: 12px;
+    width: 110px;
+    margin: 8px;
+    box-sizing: border-box;
+    border: none;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.search-input3{
+    width: 140px;
+}
+.option,.option2,.option3 {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.option:hover,.option2:hover,.option3:hover {
+    background: #f0f0f0;
+}
+
+.select-box.active .dropdown,.select-box2.active .dropdown,.select-box3.active .dropdown  {
+    display: block;
+}
 .professionals__main {
     padding-top: 130px;
     width: 100%;
@@ -89,6 +162,9 @@ body > div.container > div > div.page__bar > div.bar__left > p.selected{
                     font-weight: 500;
                     line-height: normal;
                     text-transform: capitalize;
+                    &>option{
+                        background-color: red;
+                    }
                 }
 
                 &>.select:last-child>select {
