@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>Sigortacılar Dünyası</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./profile.css">
+    <link rel="stylesheet" href="./editProfile.css">
+    <link rel="icon" href="./assets/logo.svg">
+</head>
+
+<body>
+    <navbar class="navbar">
+        <div class="container">
+            <div class="navbar__left">
+                <img src="./assets/logo.svg" alt="">
+                <p><a href="/index.html">Sigortacılar Dünyası</a></p>
+                <p><a href="/blog.html">Blog</a></p>
+                <p>
+                    </svg><a href="/hakkimizda.html">Hakkımızda</a>
+                </p>
+                <p>
+                    <a href="/professionals.html">Profesyonellerimiz</a>
+                </p>
+                <p><a href="/kurumlar.html">Kurumlar</a></p>
+                <p>Dernekler</p>
+            </div>
+            <div class="navbar__right">
+                <img src="./assets/notuser.png" alt="">
+                <p>Çetin Karaca</p>
+                <img src="./assets/bottomIcon.png" alt="">
+                <img src="./assets/card icon.svg" alt="">
+            </div>
+        </div>
+    </navbar>
+    <div class="container">
+        <div class="edit__main">
+            <p class="page__info">
+                Ana Sayfa > Profil Düzenleme
+            </p>
+            <div class="profile__top">
+                <div class="top__image">
+                    <img src="./assets/sectionImg.jpg" alt="">
+                </div>
+                <div class="top__menu">
+                    <div class="menu__left">
+                        <img src="./assets/notuser.png" alt="">
+                        <p>Çetin Karaca</p>
+                    </div>
+                    <div class="menu__center">
+                        <p class="active"><span></span>Genel Ayarlar</p>
+                        <p><span></span>Güvenlik</p>
+                        <p><span></span>Bildirim Ayarları</p>
+                    </div>
+                    <div class="menu__right">
+                        <img src="./assets/editProfile.png" alt="">
+                        <p>Profil Düzenle</p>
+                    </div>
+                </div>
+            </div>
+            <div class="all__body">
+                <div class="profile__body">
+                    <div class="body__left">
+                        <div class="double__input">
+                            <div class="username">
+                                <p>Adınız</p>
+                                <input type="text">
+                            </div>
+                            <div class="surname">
+                                <p>Soyadınız</p>
+                                <input type="text">
+                            </div>
+                            <div class="phone__number">
+                                <p>Telefon Numaranız</p>
+                                <input type="text" placeholder="0 (5__) ___ __ __">
+                            </div>
+                            <div class="email">
+                                <p>E-posta adresiniz</p>
+                                <input type="text" placeholder="example@sigortacilardunyası.com">
+                            </div>
+                            <div class="ticari">
+                                <p>Ticari Ünvanınız</p>
+                                <input type="text">
+                            </div>
+                            <div class="Şirket Adresiniz">
+                                <p>E-posta adresiniz</p>
+                                <input type="text">
+                            </div>
+                            <div class="il">
+                                <p>İl</p>
+                                <input type="text">
+                            </div>
+                            <div class="İlçe">
+                                <p>İlçe</p>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="uzman">
+                            <p>Uzmanlık Alanları</p>
+                            <input type="text">
+                        </div>
+                        <div class="tanım">
+                            <p>Şirketinizi tanımlayan sloganınız</p>
+                            <div class="tanım__input">
+                                <p>
+                                    <span>Poliçe Tasarımı <img src="./assets/exitIcon.png" alt=""></span>
+                                </p>
+                                <p>
+                                    <span>Poliçe Tasarımı <img src="./assets/exitIcon.png" alt=""></span>
+                                </p>
+                            </div>
+                        </div>
+                        <p>Biyografi</p>
+                        <div class="form__textarea">
+                            <div class="textarea__button">
+                                <p><img src="./assets/codeImg.png" alt="">Bold</p>
+                                <p><img src="./assets/verticalImg.png" alt="">Align</p>
+                            </div>
+                            <textarea name="" id="" placeholder="Buraya Yazın..."></textarea>
+                        </div>
+                        <p>Hesap Yönetimi</p>
+                        <div class="form__textarea" style="height: 205px;">
+                            <div class="textarea__button" style="margin-left: 10px;">
+                                <p><img src="./assets/arrow-bar-to-right.svg" alt="">Hesabımı Askıya al</p>
+                            </div>
+                            <textarea name="" id="" style="height: 114px;"
+                                placeholder="Hesabınızı askıya alma sebebini yazınız..."></textarea>
+                        </div>
+                        <button><img src="./assets/saveIcon2.png" alt="">Kaydet</button>
+                    </div>
+    
+                    <div class="body__right">
+                        <p>Slider Resim Ekle</p>
+                        <p>
+                            <span>
+                                <img src="./assets/editIcon2.png" alt="">
+                                <span>Resmi Burayı Bırakın, <br /> Yapıştırın veya</span>
+                                <span><img src="./assets/addIcon3.png" alt="">Bilgisayarınızdan Seçin</span>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./script.js"></script>
+</body>
+
+</html>
