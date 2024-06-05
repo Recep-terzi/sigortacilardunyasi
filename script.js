@@ -153,85 +153,92 @@ document.addEventListener('DOMContentLoaded', () => {
     function updateProfileBody(state) {
         switch (state) {
             case 'Genel Ayarlar':
-                profileBody.innerHTML = `<div class="profile__body"><div class="body__left">
-                <div class="double__input">
-                    <div class="username">
-                        <p>Adınız</p>
+                profileBody.innerHTML = `   <div class="profile__body">
+                <div class="body__left">
+                    <div class="double__input">
+                        <div class="username">
+                            <p>Adınız</p>
+                            <input type="text">
+                        </div>
+                        <div class="surname">
+                            <p>Soyadınız</p>
+                            <input type="text">
+                        </div>
+                        <div class="phone__number">
+                            <p>Telefon Numaranız</p>
+                            <input type="text" placeholder="0 (5__) ___ __ __">
+                        </div>
+                        <div class="email">
+                            <p>E-posta adresiniz</p>
+                            <input type="text" placeholder="example@sigortacilardunyası.com">
+                        </div>
+                        <div class="ticari">
+                            <p>Ticari Ünvanınız</p>
+                            <input type="text">
+                        </div>
+                        <div class="Şirket Adresiniz">
+                            <p>E-posta adresiniz</p>
+                            <input type="text">
+                        </div>
+                        <div class="il">
+                            <p>İl</p>
+                            <input type="text">
+                        </div>
+                        <div class="İlçe">
+                            <p>İlçe</p>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="uzman">
+                        <p>Uzmanlık Alanları</p>
                         <input type="text">
                     </div>
-                    <div class="surname">
-                        <p>Soyadınız</p>
-                        <input type="text">
+                    <div class="tanım">
+                        <p>Şirketinizi tanımlayan sloganınız</p>
+                        <div class="tanım__input">
+                            <p>
+                                <span>Poliçe Tasarımı <img src="./assets/exitIcon.png" alt=""></span>
+                            </p>
+                            <p>
+                                <span>Poliçe Tasarımı <img src="./assets/exitIcon.png" alt=""></span>
+                            </p>
+                        </div>
                     </div>
-                    <div class="phone__number">
-                        <p>Telefon Numaranız</p>
-                        <input type="text" placeholder="0 (5__) ___ __ __">
+                    <p>Biyografi</p>
+                    <div class="form__textarea">
+                        <div class="textarea__button">
+                            <p><img src="./assets/codeImg.png" alt="">Bold</p>
+                            <p><img src="./assets/verticalImg.png" alt="">Align</p>
+                        </div>
+                        <textarea name="" id="" placeholder="Buraya Yazın..."></textarea>
                     </div>
-                    <div class="email">
-                        <p>E-posta adresiniz</p>
-                        <input type="text" placeholder="example@sigortacilardunyası.com">
+                    <p>Hesap Yönetimi</p>
+                    <div class="form__textarea" style="height: 205px;">
+                        <div class="textarea__button" style="margin-left: 10px;">
+                            <p><img src="./assets/arrow-bar-to-right.svg" alt="">Hesabımı Askıya al</p>
+                        </div>
+                        <textarea name="" id="" style="height: 114px;"
+                            placeholder="Hesabınızı askıya alma sebebini yazınız..."></textarea>
                     </div>
-                    <div class="ticari">
-                        <p>Ticari Ünvanınız</p>
-                        <input type="text">
-                    </div>
-                    <div class="Şirket Adresiniz">
-                        <p>E-posta adresiniz</p>
-                        <input type="text">
-                    </div>
-                    <div class="il">
-                        <p>İl</p>
-                        <input type="text">
-                    </div>
-                    <div class="İlçe">
-                        <p>İlçe</p>
-                        <input type="text">
-                    </div>
+                    <button><img src="./assets/saveIcon2.png" alt="">Kaydet</button>
                 </div>
-                <div class="uzman" >
-                    <p>Uzmanlık Alanları</p>
-                    <input type="text">
-                </div>
-                <div class="tanım">
-                    <p>Şirketinizi tanımlayan sloganınız</p>
-                    <div class="tanım__input">
-                        <p>
-                            <span>Poliçe Tasarımı <img src="./assets/exitIcon.png" alt=""></span>
-                        </p>
-                        <p>
-                            <span>Poliçe Tasarımı <img src="./assets/exitIcon.png" alt=""></span>
-                        </p>
-                    </div>
-                </div>
-                <p>Biyografi</p>
-                <div class="form__textarea">
-                    <div class="textarea__button">
-                        <p><img src="./assets/codeImg.png" alt="">Bold</p>
-                        <p><img src="./assets/verticalImg.png" alt="">Align</p>
-                    </div>
-                    <textarea name="" id="" placeholder="Buraya Yazın..."></textarea>
-                </div>
-                <p>Hesap Yönetimi</p>
-                <div class="form__textarea" style="height: 205px;">
-                    <div class="textarea__button" style="margin-left: 10px;">
-                        <p><img src="./assets/arrow-bar-to-right.svg" alt="">Hesabımı Askıya al</p>
-                    </div>
-                    <textarea name="" id="" style="height: 114px;" placeholder="Hesabınızı askıya alma sebebini yazınız..."></textarea>
-                </div>
-                <button><img src="./assets/saveIcon2.png" alt="">Kaydet</button>
-            
-            </div>
 
-            <div class="body__right">
-                <p>Slider Resim Ekle</p>
-                <p>
-                    <span>
-                        <img src="./assets/editIcon2.png" alt="">
-                        <span>Resmi Burayı Bırakın, <br /> Yapıştırın veya</span>
-                        <span><img src="./assets/addIcon3.png" alt="">Bilgisayarınızdan Seçin</span>
-                    </span>
-                </p>
-            </div></div></div>`;
+                <div class="body__right">
+                    <p>Slider Resim Ekle</p>
+                    <p>
+                        <span>
+                            <img src="./assets/editIcon2.png" alt="">
+                            <span>Resmi Burayı Bırakın, <br /> Yapıştırın veya</span>
+                            <span><img src="./assets/addIcon3.png" alt="">Bilgisayarınızdan Seçin</span>
+                        </span>
+                    </p>
+                    <p>
+                        <span>
+                            <img src="./assets/editIcon2.png" alt="">
+                        </span>
+                    </p>
+                </div>
+            </div>`;
                 break;
             case 'Güvenlik':
                 profileBody.innerHTML = ` <div class="profile__body__security">

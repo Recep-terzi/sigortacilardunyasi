@@ -196,7 +196,7 @@
                 letter-spacing: 0.16px;
             }
 
-            &>button:nth-child(4) {
+            &>a:nth-child(4) {
                 display: flex;
                 cursor: pointer;
                 padding: 16px 0px;
