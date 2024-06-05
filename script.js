@@ -102,10 +102,10 @@ document.addEventListener('DOMContentLoaded', function () {
     console.log(nameElement)
     // Boşlukları "+" ile değiştir
     const formattedName = nameText.replace(/\s+/g, '+');
-    
+
     // API URL'sini oluştur
     const apiUrl = `https://ui-avatars.com/api/?name=${formattedName}`;
-    
+
     // API URL'sini img'nin src niteliğine ata
     const imgElement = document.getElementById('avatar');
     imgElement.src = apiUrl;
@@ -118,10 +118,10 @@ document.addEventListener('DOMContentLoaded', function () {
     console.log(nameElement)
     // Boşlukları "+" ile değiştir
     const formattedName = nameText.replace(/\s+/g, '+');
-    
+
     // API URL'sini oluştur
     const apiUrl = `https://ui-avatars.com/api/?name=${formattedName}`;
-    
+
     // API URL'sini img'nin src niteliğine ata
     const imgElement = document.getElementById('avatar2');
     imgElement.src = apiUrl;
@@ -132,12 +132,13 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', () => {
     const menuItems = document.querySelectorAll('.menu__center p');
     const profileBody = document.querySelector('.all__body');
+    const pageTag = document.querySelector('.page__tag');
     let activeState = 'Genel Ayarlar';
     menuItems.forEach(item => {
         item.addEventListener('click', (event) => {
             // Aktif durumu güncelle
             activeState = event.currentTarget.textContent.trim();
-
+            pageTag.innerHTML= activeState === 'Genel Ayarlar' ? 'Profil Düzenleme' : activeState
             // Tüm p öğelerinden aktif sınıfını kaldır
             menuItems.forEach(p => p.classList.remove('active'));
 
@@ -278,6 +279,205 @@ document.addEventListener('DOMContentLoaded', () => {
                 break;
             case 'Bildirim Ayarları':
                 profileBody.innerHTML = '<div class="notifications">Bildirim Ayarları İçeriği</div>';
+                break;
+            default:
+                profileBody.innerHTML = '';
+        }
+    }
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const menuItems = document.querySelectorAll('.menu__center p');
+    const profileBody = document.querySelector('.all__bodys');
+    const pageTag2 = document.querySelector('.page__tag2');
+
+    let activeState = 'Blog Gönder';
+    menuItems.forEach(item => {
+        item.addEventListener('click', (event) => {
+            // Aktif durumu güncelle
+            activeState = event.currentTarget.textContent.trim();
+            pageTag2.innerHTML= activeState
+
+            // Tüm p öğelerinden aktif sınıfını kaldır
+            menuItems.forEach(p => p.classList.remove('active'));
+
+            // Tıklanan p öğesine aktif sınıfı ekle
+            event.currentTarget.classList.add('active');
+
+            // profile__body içeriğini güncelle
+            updateProfileBody(activeState);
+        });
+    });
+
+    function updateProfileBody(state) {
+        switch (state) {
+            case 'İşaretlenmiş':
+                profileBody.innerHTML = ``;
+                break;
+            case 'Blog Gönder':
+                profileBody.innerHTML = ` <div class="profile__body">
+                <div class="body__left">
+                    <div class="form__top">
+                        <div class="title">
+                            <p>Haber Başlığı</p>
+                            <input type="text">
+                        </div>
+                        <div class="add">
+                            <p>Etiket Ekle</p>
+                            <div class="input">
+                                <input type="text">
+                                <img src="./assets/addIcon2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <p>Haber Açıklaması</p>
+                    <div class="form__textarea">
+                        <div class="textarea__button">
+                            <p><img src="./assets/newImage.png" alt="">Resim</p>
+                            <p><img src="./assets/codeImg.png" alt="">Text</p>
+                            <p><img src="./assets/verticalImg.png" alt="">Align</p>
+                            <p><img src="./assets/linkImg.png" alt="">Link</p>
+                        </div>
+                        <textarea name="" id="" placeholder="Buraya Yazın..."></textarea>
+                    </div>
+                </div>
+                <div class="body__right">
+                    <p>Slider Resim Ekle</p>
+                    <p>
+                        <span>
+                            <img src="./assets/editIcon2.png" alt="">
+                            <span>Resmi Burayı Bırakın, <br /> Yapıştırın veya</span>
+                            <span><img src="./assets/addIcon3.png" alt="">Bilgisayarınızdan Seçin</span>
+                        </span>
+                    </p>
+                    <img src="./assets/hover-image.png" alt="">
+
+                </div>
+            </div>`;
+                break;
+            case 'Gönderilenler':
+                profileBody.innerHTML = ` 
+                <div class="post__body">
+                    <div class="body__section">
+                        <div class="section__left">
+                            <p><span></span> Gönderileri Görüntüle</p>
+                            <img src="./assets/background (1).png" alt="">
+                        </div>
+                        <div class="section__right">
+                            <p><span></span> Gönderilerin Memnuniyeti</p>
+
+                            <div class="emoji__cards">
+                                <div class="emoji__card">
+                                    <p>August 2022</p>
+                                    <img src="./assets/emoji1.png" alt="">
+                                    <p>20 Points</p>
+                                </div>
+                                <div class="emoji__card">
+                                    <p>August 2022</p>
+                                    <img src="./assets/emoji2.png" alt="">
+                                    <p>20 Points</p>
+                                </div>
+                                <div class="emoji__card">
+                                    <p>August 2022</p>
+                                    <img src="./assets/emoji3.png" alt="">
+                                    <p>20 Points</p>
+                                </div>
+                                <div class="emoji__card">
+                                    <p>August 2022</p>
+                                    <img src="./assets/emoji1.png" alt="">
+                                    <p>20 Points</p>
+                                </div>
+                                <div class="emoji__card">
+                                    <p>August 2022</p>
+                                    <img src="./assets/emoji2.png" alt="">
+                                    <p>20 Points</p>
+                                </div>
+                                <div class="emoji__card">
+                                    <p>August 2022</p>
+                                    <img src="./assets/emoji3.png" alt="">
+                                    <p>20 Points</p>
+                                </div>
+                                <div class="emoji__card">
+                                    <p>August 2022</p>
+                                    <img src="./assets/emoji1.png" alt="">
+                                    <p>20 Points</p>
+                                </div>
+                                <div class="emoji__card">
+                                    <p>August 2022</p>
+                                    <img src="./assets/emoji2.png" alt="">
+                                    <p>20 Points</p>
+                                </div>
+                                <div class="emoji__card">
+                                    <p>August 2022</p>
+                                    <img src="./assets/emoji3.png" alt="">
+                                    <p>20 Points</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="all__posts">
+                        <p><span></span> Gönderileri Görüntüle</p>
+                        <div class="posts">
+                            <div class="post">
+                                <img src="./assets/post.jpg" alt="">
+                                <p>Opening Day of Boating Season, Seattle WA</p>
+                                <div class="post__menu">
+                                    <div class="menu__left">
+                                        <p><img src="./assets/eye.png" alt=""> 15k</p>
+                                        <p><img src="./assets/star.png" alt=""> 4.5</p>
+                                    </div>
+                                    <div class="menu__right">
+                                        <img src="./assets/editIcon3.png" alt="">
+                                        <img src="./assets/delete.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post">
+                                <img src="./assets/post.jpg" alt="">
+                                <p>Opening Day of Boating Season, Seattle WA</p>
+                                <div class="post__menu">
+                                    <div class="menu__left">
+                                        <p><img src="./assets/eye.png" alt=""> 15k</p>
+                                        <p><img src="./assets/star.png" alt=""> 4.5</p>
+                                    </div>
+                                    <div class="menu__right">
+                                        <img src="./assets/editIcon3.png" alt="">
+                                        <img src="./assets/delete.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post">
+                                <img src="./assets/post.jpg" alt="">
+                                <p>Opening Day of Boating Season, Seattle WA</p>
+                                <div class="post__menu">
+                                    <div class="menu__left">
+                                        <p><img src="./assets/eye.png" alt=""> 15k</p>
+                                        <p><img src="./assets/star.png" alt=""> 4.5</p>
+                                    </div>
+                                    <div class="menu__right">
+                                        <img src="./assets/editIcon3.png" alt="">
+                                        <img src="./assets/delete.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post">
+                                <img src="./assets/post.jpg" alt="">
+                                <p>Opening Day of Boating Season, Seattle WA</p>
+                                <div class="post__menu">
+                                    <div class="menu__left">
+                                        <p><img src="./assets/eye.png" alt=""> 15k</p>
+                                        <p><img src="./assets/star.png" alt=""> 4.5</p>
+                                    </div>
+                                    <div class="menu__right">
+                                        <img src="./assets/editIcon3.png" alt="">
+                                        <img src="./assets/delete.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+          `;
                 break;
             default:
                 profileBody.innerHTML = '';

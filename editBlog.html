@@ -9,7 +9,7 @@
         rel="stylesheet">
     <title>Sigortacılar Dünyası</title>
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./profile.css">
+    <link rel="stylesheet" href="./editBlog.css">
     <link rel="icon" href="./assets/logo.svg">
 </head>
 
@@ -40,7 +40,7 @@
     <div class="container">
         <div class="profile__main">
             <p class="page__info">
-                Ana Sayfa > Blog Gönder
+                Ana Sayfa > <span class="page__tag2">Blog Gönder</span>
             </p>
             <div class="profile__top">
                 <div class="top__image">
@@ -52,9 +52,9 @@
                         <p>Çetin Karaca</p>
                     </div>
                     <div class="menu__center">
-                        <p>İşaretlenmiş</p>
-                        <p><span></span>Blog Gönder</p>
-                        <p>Gönderilenler</p>
+                        <p><span></span>İşaretlenmiş</p>
+                        <p class="active"><span></span>Blog Gönder</p>
+                        <p><span></span>Gönderilenler</p>
                     </div>
                     <div class="menu__right">
                         <img src="./assets/editProfile.png" alt="">
@@ -62,42 +62,45 @@
                     </div>
                 </div>
             </div>
-            <p><span></span>Posta Gönder</p>
-            <div class="profile__body">
-                <div class="body__left">
-                    <div class="form__top">
-                        <div class="title">
-                            <p>Haber Başlığı</p>
-                            <input type="text">
-                        </div>
-                        <div class="add">
-                            <p>Etiket Ekle</p>
-                            <div class="input">
+            <div class="all__bodys">
+                <div class="profile__body">
+                    <div class="body__left">
+                        <div class="form__top">
+                            <div class="title">
+                                <p>Haber Başlığı</p>
                                 <input type="text">
-                                <img src="./assets/addIcon2.png" alt="">
+                            </div>
+                            <div class="add">
+                                <p>Etiket Ekle</p>
+                                <div class="input">
+                                    <input type="text">
+                                    <img src="./assets/addIcon2.png" alt="">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <p>Haber Açıklaması</p>
-                    <div class="form__textarea">
-                        <div class="textarea__button">
-                            <p><img src="./assets/newImage.png" alt="">Resim</p>
-                            <p><img src="./assets/codeImg.png" alt="">Text</p>
-                            <p><img src="./assets/verticalImg.png" alt="">Align</p>
-                            <p><img src="./assets/linkImg.png" alt="">Link</p>
+                        <p>Haber Açıklaması</p>
+                        <div class="form__textarea">
+                            <div class="textarea__button">
+                                <p><img src="./assets/newImage.png" alt="">Resim</p>
+                                <p><img src="./assets/codeImg.png" alt="">Text</p>
+                                <p><img src="./assets/verticalImg.png" alt="">Align</p>
+                                <p><img src="./assets/linkImg.png" alt="">Link</p>
+                            </div>
+                            <textarea name="" id="" placeholder="Buraya Yazın..."></textarea>
                         </div>
-                        <textarea name="" id="" placeholder="Buraya Yazın..."></textarea>
                     </div>
-                </div>
-                <div class="body__right">
-                    <p>Slider Resim Ekle</p>
-                    <p>
-                        <span>
-                            <img src="./assets/editIcon2.png" alt="">
-                            <span>Resmi Burayı Bırakın, <br /> Yapıştırın veya</span>
-                            <span><img src="./assets/addIcon3.png" alt="">Bilgisayarınızdan Seçin</span>
-                        </span>
-                    </p>
+                    <div class="body__right">
+                        <p>Slider Resim Ekle</p>
+                        <p>
+                            <span>
+                                <img src="./assets/editIcon2.png" alt="">
+                                <span>Resmi Burayı Bırakın, <br /> Yapıştırın veya</span>
+                                <span><img src="./assets/addIcon3.png" alt="">Bilgisayarınızdan Seçin</span>
+                            </span>
+                        </p>
+                        <img src="./assets/hover-image.png" alt="">
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -189,6 +192,7 @@
             </div>
         </div>
     </div>
+    <script src="./script.js"></script>
 </body>
 
 </html>
